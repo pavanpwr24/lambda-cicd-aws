@@ -6,6 +6,8 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - pip install -r requirements.txt -t lib
+      - rm -rf lib/numpy lib/numpy* lib/__pycache__/numpy*
+
   build:
     commands:
       - echo "Zipping deployment package..."
